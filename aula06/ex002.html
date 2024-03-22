@@ -13,10 +13,8 @@
 <body>
     <h1>Primeira msg</h1>
     <script>
-        /*Mais de uma linha de código*/
-        window.alert('Minha primeira mensagem!') //msg de alerta
-        window.confirm('Está gostando de JS?')
-        window.prompt('Qual é o seu nome?')
+        var nome = window.prompt('Qual é o seu nome?') //vai perguntar o nome
+        window.alert('É um grande prazer em te conhecer' + nome + '!')  // + é a concatenação
     </script>
 </body>
 </html>

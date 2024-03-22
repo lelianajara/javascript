@@ -13,10 +13,10 @@
 <body>
     <h1>Primeira msg</h1>
     <script>
-        /*Mais de uma linha de código*/
-        window.alert('Minha primeira mensagem!') //msg de alerta
-        window.confirm('Está gostando de JS?')
-        window.prompt('Qual é o seu nome?')
+        var n1 = Number.parseInt(window.prompt('Digite um número'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número'))
+        var s = n1 + n2
+        window.alert('A soma dos valores é' + s) // o + poder tanto adição como concatenação
     </script>
 </body>
 </html>
