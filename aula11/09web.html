@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro</title>
+</head>
+<body>
+    <h1>Vc é BR ou não</h1>
+
+    De que País você é? <input type="text" name="país" id="país">
+    <button type="button" onclick="analisar()">Analisar</button>
+    <div id="ver">
+
+    </div>
+    
+    <script>
+        function analisar() {
+            var país = document.querySelector('input#país')
+            var ver = document.querySelector('div#ver')
+            var resul = String(país.value)
+            ver.innerHTML = `<p>Seu País é ${resul}</p>`
+            if (resul == `Brasil`) {
+                ver.innerHTML += `Você é Nacional`
+            } else {
+                ver.innerHTML += `Você é Estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>
