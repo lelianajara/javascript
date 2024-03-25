@@ -1,10 +1,14 @@
 body {
-    background-color: rgb(62, 62, 255);
+    background-color: #2626d6;
     font: normal 15pt Arial;
 }
 
 header {
     color: white;
+    text-align: center;
+}
+
+div {
     text-align: center;
 }
 
@@ -21,4 +25,5 @@ section {
 footer {
     color: white;
     font-style: italic;
+    text-align: center;
 }
